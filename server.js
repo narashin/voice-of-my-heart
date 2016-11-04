@@ -1,5 +1,5 @@
 var TelegramBot = require('node-telegram-bot-api');
-var token = 'bot276043456:AAHzIvPoLp54IXewyAhk6yby_vCB7d8J88s';
+var token = '276043456:AAHzIvPoLp54IXewyAhk6yby_vCB7d8J88s';
 var bot = new TelegramBot(token, {polling: true});
 
 bot.onText(/...../, function(msg, match) {
@@ -9,7 +9,7 @@ bot.onText(/...../, function(msg, match) {
         bot.sendMessage(fromId, chosenVomhMessages);
 });
 
-bot.onText(/\help/, function(msg, match){
+bot.onText(/\/help/, function(msg, match){
         var fromId = msg.from.id;
         bot.sendMessage(fromId, "제가 뭘 알겠읍니까,,,,");
 });
