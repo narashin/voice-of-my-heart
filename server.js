@@ -9,7 +9,7 @@ bot.onText(/...../, function(msg, match) {
         bot.sendMessage(fromId, chosenVomhMessages);
 });
 
-bot.onText(/\help/, function(msg, match){
+bot.onText(/\/help/, function(msg, match){
         var fromId = msg.from.id;
         bot.sendMessage(fromId, "제가 뭘 알겠읍니까,,,,");
 });
