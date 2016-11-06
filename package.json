@@ -1,50 +1,36 @@
 {
       "name": "voice-of-my-heart",
-            "version": "1.0.0",
-              "description": "제가 아니라 제 고양이의 마음의 소리겠죠",
-                "repository": "https://github.com/uselesscarrot/voice-of-my-heart",
-                  "private": true,
-                    "scripts": {
-                            "start": "node app.js",
-                                "monitor": "nodemon app.js",
-                                    "deploy": "gcloud app deploy app.yaml",
-                                        "test": "mocha server.js -t 30000"
-                                              },
-                        "contributors": [
-                                {
-                                          "name": "Jon Wayne Parrott",
-                                                "email": "jonwayne@google.com"
-                                                        },
-                            {
-                                      "name": "Jonathan Simon",
-                                            "email": "jbsimon@google.com"
-                                                    },
-                                {
-                                          "name": "Jason Dobry",
-                                                "email": "jdobry@google.com"
-                                                        }
-        ],
-              "license": "Apache Version 2.0",
-                "semistandard": {
-                        "globals": [
-                                  "after",
-                              "afterEach",
-                                    "before",
-                                          "beforeEach",
-                                                "describe",
-                                                      "it"
-                                                              ]
-                                                                },
-                  "dependencies": {
-                          "express": "^4.14.0"
-                                },
-                    "devDependencies": {
-                            "mocha": "^3.0.2",
-                                "nodejs-repo-tools": "git+https://github.com/GoogleCloudPlatform/nodejs-repo-tools.git#21daa823090c43fb667157c8b5b0c3b7f45a8357",
-                                    "supertest": "^2.0.0"
-                                          },
-                      "engines": {
-                              "node": ">=4.3.2"
-                                    }
+       "version": "1.0.0",
+       "description": "제가 아니라 제 고양이의 마음의 소리겠죠",
+       "repository": "https://github.com/uselesscarrot/voice-of-my-heart",
+       "private": true,
+       "scripts": {
+                "start": "node app.js",
+                "monitor": "nodemon app.js",
+                "deploy": "gcloud app deploy app.yaml",
+                "test": "mocha server.js -t 3000
+       },
+       "license": "Apache Version 2.0",
+       "semistandard": {
+                "globals": [
+                        "after",
+                        "afterEach",
+                        "before",
+                        "beforeEach",
+                        "describe",
+                        "it"
+                 ]
+        "dependencies": {
+                          "express": "^4.14.0",
+                          "node-telegram-bot-api": "^0.21.1"
+                         },
+                          "devDependencies": {
+                           "mocha": "^3.0.2",
+                           "nodejs-repo-tools": "git+https://github.com/GoogleCloudPlatform/nodejs-repo-tools.git#21daa823090c43fb667157c8b5b0c3b7f45a8357",
+                           "supertest": "^2.0.0"
+                          },
+                           "engines": {
+                                         "node": ">=4.3.2"
+                                      }
+        }
 }
-
